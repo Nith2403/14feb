@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine Message</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#FFA9BA] flex items-center justify-center min-h-screen p-4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine Message</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <div class="bg-[#F5BED0] rounded-3xl shadow-lg p-8 flex flex-col items-center text-center w-full m-48 fade-in delay-1">
-        <!-- Heart Image -->
-        <img src="image copy 3.png" alt="Cute Heart" 
-             class="w-96 h-64 mb-6 opacity-0 animate-fadeIn delay-200 fade-in delay-1 w-96 h-64">
-        
-        <!-- Main Message -->
-        <h1 class="text-xl md:text-2xl font-semibold text-pink-600 mb-4 opacity-0 animate-fadeIn delay-500 fade-in delay-2">
-            I have no gift, <br> I have only a cute heart for you bbe 😔
-        </h1>
-
-        <!-- Optional small note -->
-        <p class="text-gray-500 text-sm opacity-0 animate-fadeIn delay-800 fade-in delay-3">
-            nha nha 💖
-        </p>
-    </div>
-
-    <style>
+  <style>
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(30px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+
     .fade-in {
       animation: fadeInUp 1s ease forwards;
       opacity: 0;
     }
+
     .delay-1 { animation-delay: 0.5s; }
     .delay-2 { animation-delay: 1s; }
     .delay-3 { animation-delay: 1.5s; }
+  </style>
+</head>
 
+<body class="bg-[#FFA9BA] flex items-center justify-center min-h-screen p-4">
 
-    </style>
-    
+  <div class="bg-[#F5BED0] rounded-3xl shadow-2xl p-6 sm:p-8 flex flex-col items-center text-center w-full max-w-lg">
+
+    <!-- Heart Image -->
+    <img 
+      src="image copy 3.png" 
+      alt="Cute Heart"
+      class="w-full max-w-xs sm:max-w-md h-auto mb-6 fade-in delay-1 rounded-xl"
+    >
+
+    <!-- Main Message -->
+    <h1 class="text-lg sm:text-xl md:text-2xl font-semibold text-pink-600 mb-4 fade-in delay-2 leading-relaxed">
+      I have no gift, <br>
+      I have only a cute heart for you bbe 😔
+    </h1>
+
+    <!-- Optional small note -->
+    <p class="text-gray-500 text-sm sm:text-base fade-in delay-3">
+      nha nha 💖
+    </p>
+
+  </div>
+
 </body>
 </html>
