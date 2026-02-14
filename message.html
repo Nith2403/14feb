@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+    .delay-1 { animation-delay: 0.5s; }
+    .delay-2 { animation-delay: 1s; }
+    .delay-3 { animation-delay: 1.5s; }
+
+
+</style>
+</head>
+<body class="bg-[#FFA9BA] flex items-center justify-center min-h-screen p-4">
+
+  <div class="bg-[#F5BED0] rounded-xl max-w-xl text-center p-8 space-y-6 fade-in delay-1 shadow shadow-2xl ">
+    <h1 class="font-bold text-4xl text-[#CC0156]">Happy Valentine's Day 💕</h1>
+    <p class="text-2xl text-[#CC0156] fade-in delay-2">
+      To the love of my life, I just wanna remind you that I fall more in love with you day by day. I love you every second, every minute, every hour, every day, and maybe even every universe. <br><br> Tbh, you were just a random person who came into my life, and Im not a person who trusts someone easily but for you I broke my own rules. Maybe it’s the way you laugh, the way you talk, or just the way you are. <br> Just know that for as long as I breathe, my heart will always love you.
+      <br>I LOVE YOU SOOOOO MUCHHHHHH HONEYYYYY💌😘
+    </p>
+    <img class="w-full rounded-xl fade-in delay-3 " src="image copy 2.png" alt="Valentine Image">
+    <button 
+    onclick="window.location.href='lastbutnotleast.html'" 
+    class="rounded-full bg-[#FFA9BA] px-16 py-4 text-xl font-semibold text-[#CC0156]">More😉</button>
+  </div>
+
+</body>
+</html>
